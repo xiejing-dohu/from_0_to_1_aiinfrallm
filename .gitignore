@@ -1,0 +1,15 @@
+# System files
+.DS_Store
+Thumbs.db
+
+# IDE & Editor files
+.vscode/
+.idea/
+*.swp
+
+# Python & Build files
+__pycache__/
+*.pyc
+build/
+dist/
+*.egg-info/
