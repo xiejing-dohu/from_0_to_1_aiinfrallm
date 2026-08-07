@@ -16,6 +16,7 @@
 | 📄 [4. vLLM 核心技术深度解析](4_vLLM高吞吐大模型推理系统架构与核心技术深度解析.md) | 推理引擎 / 系统设计 | 深入剖析 vLLM 整体设计、Prefix Caching、Chunked Prefill 与 Guided Decoding |
 | 📄 [5. Inside vLLM：系统剖析与源码图解](5_Inside_vLLM_Anatomy_of_a_High_Throughput_LLM_Inference_System.md) | 核心原理 / 经典讲义翻译 | 精读翻译自 Aleksa Gordić 深度好文 *Inside vLLM: Anatomy of a High-Throughput LLM Inference System*，详述 V1 架构与生命周期 |
 | 📄 [6. CUDA 高性能编程与算子优化教程](6_CUDATutorial_CUDA高性能编程与大模型推理教程.md) | 算子调优 / CUDA & Triton | 对开源项目 [PaddleJitLab/CUDATutorial](https://github.com/PaddleJitLab/CUDATutorial) 进行框架梳理，包含 Reduce/GEMM/Conv 级联优化 |
+| 📄 [7. TensorRT-LLM 快速入门与架构解析](7_TensorRT_LLM快速入门指南与架构解析.md) | 推理引擎 / NVIDIA 优化 | 总结 NVIDIA 官方 [TensorRT-LLM Quick Start Guide](https://nvidia.github.io/TensorRT-LLM/quick-start-guide.html)，涵盖 AOT 编译、`trtllm-build`/`trtllm-serve` 与性能特性 |
 
 ---
 
@@ -29,4 +30,4 @@
 
 ## 声明与致谢
 
-本仓库内容均为**个人学习目的**整理与中文翻译笔记。文中引用的图文与算法思想版权归原作者及开源社区所有（包括但不限于 vLLM Team, Aleksa Gordić, PaddleJitLab, Orca, DeepSeek 等）。感谢前沿开发者们的无私分享！
+本仓库内容均为**个人学习目的**整理与中文翻译笔记。文中引用的图文与算法思想版权归原作者及开源社区所有（包括但不限于 vLLM Team, NVIDIA TensorRT-LLM, Aleksa Gordić, PaddleJitLab, Orca, DeepSeek 等）。感谢前沿开发者们的无私分享！
