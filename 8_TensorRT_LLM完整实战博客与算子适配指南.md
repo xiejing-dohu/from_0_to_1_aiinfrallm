@@ -4,9 +4,22 @@
 
 ---
 
+## 🔗 8 篇实战博客原文参考链接
+
+1. **博客一**：[NVIDIA《如何在 TensorRT-LLM 中支持 Qwen 模型》](https://github.com/NVIDIA/TensorRT-LLM/tree/main/examples/qwen)
+2. **博客二**：[NVIDIA《CodeFuse-CodeLlama-34B INT4 量化和推理优化实践》](https://github.com/codefuse-ai/MFTCoder)
+3. **博客三**：[NVIDIA《LLM 推理基准测试：使用 TensorRT-LLM 进行性能调优》](https://developer.nvidia.com/zh-cn/blog/benchmarking-llm-inference-optimizing-performance-with-tensorrt-llm/)
+4. **博客四**：[NVIDIA × 阿里《阿里安全使用 NeMo 和 TensorRT-LLM 的大模型工程化落地实践》](https://developer.nvidia.com/blog/)
+5. **博客五**：[阿里云《大语言模型推理提速，TensorRT-LLM 高性能推理实践》](https://developer.aliyun.com/article/1393664)
+6. **博客六**：[阿里云《使用 TensorRT LLM 量化与推理部署 Qwen 模型》](https://developer.aliyun.com/article/1458000)
+7. **博客七**：[阿里云《使用 TensorRT-LLM 进行生产环境的部署指南》](https://developer.aliyun.com/article/)
+8. **博客八**：[NVIDIA《TensorRT 中的自定义层》](https://docs.nvidia.com/deeplearning/tensorrt/developer-guide/index.html#extending-tensorrt) & [阿里云《初识 TensorRT Plugin》](https://developer.aliyun.com/article/1053744)
+
+---
+
 ## 1. 核心实战博客精读与工程拆解
 
-### 📌 博客一：NVIDIA《如何在 TensorRT-LLM 中支持 Qwen 模型》
+### 📌 博客一：[NVIDIA《如何在 TensorRT-LLM 中支持 Qwen 模型》](https://github.com/NVIDIA/TensorRT-LLM/tree/main/examples/qwen)
 * **核心焦点**：**新模型 / 未支持算子适配全流程（模型定义到 Engine 生成）**
 * **JD 匹配度**：★★★★★（直接对应“模型适配与算子移植”）
 * **技术链路拆解**：
@@ -18,7 +31,7 @@
 
 ---
 
-### 📌 博客二：NVIDIA《CodeFuse-CodeLlama-34B INT4 量化和推理优化实践》
+### 📌 博客二：[NVIDIA《CodeFuse-CodeLlama-34B INT4 量化和推理优化实践》](https://github.com/codefuse-ai/MFTCoder)
 * **核心焦点**：**FP/BF16 到 W4A16 深度量化落地与 Build 参数全解**
 * **JD 匹配度**：★★★★★（直接对应“模型量化与性能压榨”）
 * **完整构建链路**：
@@ -31,7 +44,7 @@
 
 ---
 
-### 📌 博客三：NVIDIA《LLM 推理基准测试：使用 TensorRT-LLM 进行性能调优》
+### 📌 博客三：[NVIDIA《LLM 推理基准测试：使用 TensorRT-LLM 进行性能调优》](https://developer.nvidia.com/zh-cn/blog/benchmarking-llm-inference-optimizing-performance-with-tensorrt-llm/)
 * **核心焦点**：**性能测试方法论与 SLA 约束下的 Pareto 最优化**
 * **JD 匹配度**：★★★★★（对应“链路调优与 Benchmark”）
 * **核心观测指标矩阵**：
@@ -43,7 +56,7 @@
 
 ---
 
-### 📌 博客四：NVIDIA × 阿里《阿里安全使用 NeMo 和 TensorRT-LLM 的大模型工程化落地实践》
+### 📌 博客四：[NVIDIA × 阿里《阿里安全使用 NeMo 和 TensorRT-LLM 的大模型工程化落地实践》](https://developer.nvidia.com/blog/)
 * **核心焦点**：**生产级部署全链路优化与动态 Batching 减气泡**
 * **JD 匹配度**：★★★★★（对应“大厂生产推理系统落地”）
 * **生产部署 DAG 链路**：
@@ -52,7 +65,7 @@
 
 ---
 
-### 📌 博客五：阿里云《大语言模型推理提速，TensorRT-LLM 高性能推理实践》
+### 📌 博客五：[阿里云《大语言模型推理提速，TensorRT-LLM 高性能推理实践》](https://developer.aliyun.com/article/1393664)
 * **核心焦点**：**TensorRT-LLM 四大优化支柱全景图**
 * **JD 匹配度**：★★★★☆
 * **四大支柱解构**：
@@ -63,7 +76,7 @@
 
 ---
 
-### 📌 博客六：阿里云《使用 TensorRT LLM 量化与推理部署 Qwen 模型》
+### 📌 博客六：[阿里云《使用 TensorRT LLM 量化与推理部署 Qwen 模型》](https://developer.aliyun.com/article/1458000)
 * **核心焦点**：**两阶段构建流命令行深度解操**
 * **JD 匹配度**：★★★★☆
 * **核心问题辨析：`convert_checkpoint` 与 `trtllm-build` 是同一回事吗？**
@@ -71,7 +84,7 @@
 
 ---
 
-### 📌 博客七：阿里云《使用 TensorRT-LLM 进行生产环境的部署指南》
+### 📌 博客七：[阿里云《使用 TensorRT-LLM 进行生产环境的部署指南》](https://developer.aliyun.com/article/)
 * **核心焦点**：**从编译器角度理解为什么需要 Build Engine**
 * **JD 匹配度**：★★★★☆
 * **编译器视角构建拓扑图**：
@@ -101,7 +114,7 @@ TensorRT Engine (.engine 二进制)
 
 ---
 
-### 📌 博客八：NVIDIA & 阿里云《TensorRT 中的自定义层与 Plugin 深度解析》
+### 📌 博客八：[NVIDIA《TensorRT 中的自定义层》](https://docs.nvidia.com/deeplearning/tensorrt/developer-guide/index.html#extending-tensorrt) & [阿里云《初识 TensorRT Plugin》](https://developer.aliyun.com/article/1053744)
 * **核心焦点**：**自定义算子扩展（TensorRT Plugin）与开销陷阱**
 * **JD 匹配度**：★★★★★（对应“自定义 Kernel 与 Plugin 适配”）
 * **Plugin 三大核心工程用途**：
@@ -119,7 +132,7 @@ TensorRT Engine (.engine 二进制)
 graph TD
     A[学习路线图] --> B[第一轮：搞懂全流程]
     A --> C[第二轮：算子适配与量化]
-    A --> D[3第三轮：生产环境链路调优]
+    A --> D[第三轮：生产环境链路调优]
 
     B --> B1[⑤ ACK 总览]
     B --> B2[⑦ 生产部署指南]
@@ -181,7 +194,7 @@ graph TD
 
 ### Q9: 性能压榨中，Throughput、TTFT、TPOT 和 Concurrency 如何权衡？
 > **回答模板**：
-> 它们在系统物理资源（算力/带宽/显存）上存在 **Trade-off**。提升 Concurrency（并发数）与 Batch Size 可以提升硬件利用率，使吞吐量（Throughput）升高；但会增加排队延迟与 KV Cache 显存竞争，导致首字延迟（TTFT）和字间延迟（TPOT）恶化。工程落地中需要设定 **SLA 约束（如 P99 TTFT < 200ms）**，在该临界点以内寻找最大吞吐量的 Batch / Concurrency 最佳配置文件（Pareto 最优点）。
+> 它们在系统物理资源（算力/带宽/显存）上存在 **Trade-off**。提升 Concurrency（并发数）与 Batch Size 可以提升硬件利用率，使吞吐量（Throughput）升高；但会增加排队延迟与 KV Cache 显存竞争，导致首字延迟（TTFT）和字间延迟（TPOT）恶化。工程落地中需要设定 **SLA 约束（如 P99 TTFT < 200ms）**，在该临界点以内寻找最大吞吐量的 Batch / Concurrency 最佳配置文件（Pareto 最优曲线点）。
 
 ### Q10: 面试官问“你做的推理链路优化具体包含哪些维度”时怎么回答？
 > **回答模板**：
