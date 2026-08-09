@@ -19,6 +19,7 @@
 | 📄 [7. TensorRT-LLM 快速入门与架构解析](7_TensorRT_LLM快速入门指南与架构解析.md) | 推理引擎 / NVIDIA 优化 | 总结 NVIDIA 官方 [TensorRT-LLM Quick Start Guide](https://nvidia.github.io/TensorRT-LLM/quick-start-guide.html)，涵盖 AOT 编译、`trtllm-build`/`trtllm-serve` 与性能特性 |
 | 📄 [8. TensorRT-LLM 完整实战博客与算子适配指南](8_TensorRT_LLM完整实战博客与算子适配指南.md) | 算子适配 / 链路优化面试干货 | 深度拆解 NVIDIA 与阿里云 8 篇 TensorRT-LLM 官方实战博客，汇总 Qwen 适配、W4A16/FP8 量化、Plugin 开销陷阱与 10 大硬核面试模板 |
 | 📄 [9. 阿里 RTP-LLM 工业级推理引擎架构与生产实践](9_阿里RTP_LLM工业级推理引擎架构与生产实践.md) | 工业级推理 / OOM & 负载均衡 | 深入剖析阿里开源 [RTP-LLM](https://github.com/alibaba/rtp-llm)，解析 PagedAttention、Radix Tree 前缀复用、OOM 水线防御与集群负载均衡 |
+| 📄 [10. 从零手写实现 LLM 的 KV Cache 机制](10_Coding_the_KV_Cache_in_LLMs_From_Scratch.md) | 代码实现 / PyTorch 手写 | 精读 Sebastian Raschka 博士讲义 [Coding the KV Cache from Scratch](https://magazine.sebastianraschka.com/p/coding-the-kv-cache-in-llms)，手写带 KV Cache 的 Multi-Head Attention，分析预分配与滑动窗口优化 |
 
 ---
 
@@ -32,4 +33,4 @@
 
 ## 声明与致谢
 
-本仓库内容均为**个人学习目的**整理与中文翻译笔记。文中引用的图文与算法思想版权归原作者及开源社区所有（包括但不限于 vLLM Team, NVIDIA TensorRT-LLM, 阿里巴巴 RTP-LLM, Aleksa Gordić, PaddleJitLab, CodeFuse, 阿里云, Orca, DeepSeek 等）。感谢前沿开发者们的无私分享！
+本仓库内容均为**个人学习目的**整理与中文翻译笔记。文中引用的图文与算法思想版权归原作者及开源社区所有（包括但不限于 vLLM Team, NVIDIA TensorRT-LLM, 阿里巴巴 RTP-LLM, Sebastian Raschka 博士, Aleksa Gordić, PaddleJitLab, CodeFuse, 阿里云, Orca, DeepSeek 等）。感谢前沿开发者们的无私分享！
