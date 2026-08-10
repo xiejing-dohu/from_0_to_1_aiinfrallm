@@ -21,17 +21,18 @@
 | 📄 [9. 阿里 RTP-LLM 工业级推理引擎架构与生产实践](9_阿里RTP_LLM工业级推理引擎架构与生产实践.md) | 工业级推理 / OOM & 负载均衡 | 深入剖析阿里开源 [RTP-LLM](https://github.com/alibaba/rtp-llm)，解析 PagedAttention、Radix Tree 前缀复用、OOM 水线防御与集群负载均衡 |
 | 📄 [10. 从零手写实现 LLM 的 KV Cache 机制](10_Coding_the_KV_Cache_in_LLMs_From_Scratch.md) | 代码实现 / PyTorch 手写 | 精读 Sebastian Raschka 博士讲义 [Coding the KV Cache from Scratch](https://magazine.sebastianraschka.com/p/coding-the-kv-cache-in-llms)，手写带 KV Cache 的 Multi-Head Attention，分析预分配与滑动窗口优化 |
 | 📄 [11. tiny-vllm：用 C++ 与 CUDA 从零手写极简 vLLM 推理引擎](11_tiny_vllm_极简vLLM推理引擎手写指南.md) | 算子与引擎 / C++ & CUDA | 深度解析开源项目 [jmaczan/tiny-vllm](https://github.com/jmaczan/tiny-vllm)，理清 LLM/模型文件/推理引擎本质，展示全 CUDA Kernel（RMSNorm、RoPE、Continuous Batching、PagedAttention）从零实现 |
+| 📄 [12. Tiny-LLM 性能测试账本与优化归因分析](12_Tiny_LLM_性能测试账本与优化归因分析.md) | 算子归因 / 严谨 Benchmark | 精读 Alex Chi (skyzh) 课程讲义 [Performance Evidence Ledger](https://skyzh.github.io/tiny-llm/appendix-performance.html)，展示基于 Apple Silicon MLX/Metal 的基准测试方法论、算子耗时归因 (Operator Attribution) 账本、300K 长上下文衰退曲线与 PagedAttention 显存带宽收益分析 |
 
 ---
 
 ## 🛠 学习涉及技术栈
 
-* **推理框架**: vLLM, TensorRT-LLM, RTP-LLM, tiny-vllm, SGLang, TGI
+* **推理框架**: vLLM, TensorRT-LLM, RTP-LLM, tiny-vllm, Tiny-LLM (MLX/Metal), SGLang, TGI
 * **内存与调度**: PagedAttention, Continuous Batching, Chunked Prefill, Prefix Caching, PD Separation
-* **算子与加速**: CUDA C++, OpenAI Triton, FlashAttention, CUTLASS, CUDA Graph
+* **算子与加速**: CUDA C++, Metal Shaders, OpenAI Triton, FlashAttention, CUTLASS, CUDA Graph
 
 ---
 
 ## 声明与致谢
 
-本仓库内容均为**个人学习目的**整理与中文翻译笔记。文中引用的图文与算法思想版权归原作者及开源社区所有（包括但不限于 vLLM Team, NVIDIA TensorRT-LLM, 阿里巴巴 RTP-LLM, Sebastian Raschka 博士, Aleksa Gordić, Jędrzej Maczan (tiny-vllm), PaddleJitLab, CodeFuse, 阿里云, Orca, DeepSeek 等）。感谢前沿开发者们的无私分享！
+本仓库内容均为**个人学习目的**整理与中文翻译笔记。文中引用的图文与算法思想版权归原作者及开源社区所有（包括但不限于 vLLM Team, NVIDIA TensorRT-LLM, 阿里巴巴 RTP-LLM, Sebastian Raschka 博士, Alex Chi & Connor Zhang (skyzh/tiny-llm), Aleksa Gordić, Jędrzej Maczan (tiny-vllm), PaddleJitLab, CodeFuse, 阿里云, Orca, DeepSeek 等）。感谢前沿开发者们的无私分享！
