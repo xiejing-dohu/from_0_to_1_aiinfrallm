@@ -13,3 +13,7 @@ __pycache__/
 build/
 dist/
 *.egg-info/
+
+# Ignore everything in tiny-llm/ except tiny-llm/book-zh/
+tiny-llm/*
+!tiny-llm/book-zh/

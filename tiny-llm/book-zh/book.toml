@@ -1,0 +1,17 @@
+[book]
+authors = ["Alex Chi", "Connor Zhang"]
+language = "zh-CN"
+src = "src"
+title = "Tiny-LLM — 使用 MLX 构建 LLM 推理服务系统（中文翻译）"
+description = "面向系统工程师的实践课程：使用 MLX、Metal kernel、KV cache、批处理与分页注意力构建和优化 LLM 推理系统。"
+
+[preprocessor.toc]
+command = "mdbook-toc"
+renderer = ["html"]
+
+[output.html]
+additional-css = ["custom.css"]
+git-repository-url = "https://github.com/skyzh/tiny-llm"
+
+[preprocessor.katex]
+after = ["links"]

@@ -21,7 +21,7 @@
 | 📄 [9. 阿里 RTP-LLM 工业级推理引擎架构与生产实践](9_阿里RTP_LLM工业级推理引擎架构与生产实践.md) | 工业级推理 / OOM & 负载均衡 | 深入剖析阿里开源 [RTP-LLM](https://github.com/alibaba/rtp-llm)，解析 PagedAttention、Radix Tree 前缀复用、OOM 水线防御与集群负载均衡 |
 | 📄 [10. 从零手写实现 LLM 的 KV Cache 机制](10_Coding_the_KV_Cache_in_LLMs_From_Scratch.md) | 代码实现 / PyTorch 手写 | 精读 Sebastian Raschka 博士讲义 [Coding the KV Cache from Scratch](https://magazine.sebastianraschka.com/p/coding-the-kv-cache-in-llms)，手写带 KV Cache 的 Multi-Head Attention，分析预分配与滑动窗口优化 |
 | 📄 [11. tiny-vllm：用 C++ 与 CUDA 从零手写极简 vLLM 推理引擎](11_tiny_vllm_极简vLLM推理引擎手写指南.md) | 算子与引擎 / C++ & CUDA | 深度解析开源项目 [jmaczan/tiny-vllm](https://github.com/jmaczan/tiny-vllm)，理清 LLM/模型文件/推理引擎本质，展示全 CUDA Kernel（RMSNorm、RoPE、Continuous Batching、PagedAttention）从零实现 |
-| 📄 [12. Tiny-LLM 性能测试账本与优化归因分析](12_Tiny_LLM_性能测试账本与优化归因分析.md) | 算子归因 / 严谨 Benchmark | 精读 Alex Chi (skyzh) 课程讲义 [Performance Evidence Ledger](https://skyzh.github.io/tiny-llm/appendix-performance.html)，展示基于 Apple Silicon MLX/Metal 的基准测试方法论、算子耗时归因 (Operator Attribution) 账本、300K 长上下文衰退曲线与 PagedAttention 显存带宽收益分析 |
+| 📚 [12. Tiny-LLM 完整中文课程](tiny-llm/book-zh/src/SUMMARY.md) | MLX / Metal / Mini vLLM / Coding Agent | 完整克隆并翻译 [skyzh/tiny-llm](https://skyzh.github.io/tiny-llm/) 全部 4 周课程、性能附录、术语表与配套资源；原第 12 篇保留为[性能附录专题摘要](12_Tiny_LLM_性能测试账本与优化归因分析.md) |
 
 ---
 

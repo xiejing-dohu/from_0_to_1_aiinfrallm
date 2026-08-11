@@ -1,0 +1,27 @@
+# 术语索引
+
+- [标定点产品注意](./week1-01-attention.md)
+- [多头注意](./week1-01-attention.md)
+- [灯](./week1-01-attention.md)
+- [旋转位置编码](./week1-02-positional-encodings.md)
+- [分组查询注意](./week1-03-gqa.md)
+- [Qwen3 注意单元](./week1-03-gqa.md)
+- [RMSNorm](./week1-04-rmsnorm-and-mlp.md)
+- [西卢](./week1-04-rmsnorm-and-mlp.md)
+- [瑞士](./week1-04-rmsnorm-and-mlp.md)
+- [反洗钱](./week1-04-rmsnorm-and-mlp.md)
+- [睡觉](./week1-05-qwen3-model.md)
+- [Qwen3 变形器块](./week1-05-qwen3-model.md)
+- [1周 Qwen3 型号](./week1-05-qwen3-model.md)
+- [确定线性](./week1-05-qwen3-model.md)
+- [KV Cache](./week2-01-kv-cache.md)
+- [基准和剖析](./week2-02-benchmark-profile.md)
+- [量化模型](./week2-03-quantize-model.md)
+- [喷火型核心](./week2-04-fused-model-kernels.md)
+- [弃 Decode 请注意](./week2-05-decode-attention.md)
+- [SIMD - 马特里克斯 Prefill](./week2-06-simd-matrix-prefill.md)
+- [Split -K] Prefill](./week2-07-split-k-prefill.md)
+- [闪亮的注意](./week3-05-flash-attention.md)
+- [期待注意](./week3-04-paged-attention-part2.md)
+
+{{#include copyright.md}}

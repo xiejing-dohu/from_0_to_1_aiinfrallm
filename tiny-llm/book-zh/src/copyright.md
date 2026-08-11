@@ -1,0 +1,1 @@
+<p style="text-align: center; margin-top: 3em"><small>非常感谢你的反馈 加入我们的行列 <a href="https://skyzh.dev/join/discord">Discord 社区</a>.<br>有问题吗? 在 <a href="https://github.com/skyzh/tiny-llm">github.com/skyzh/ ).tiny-llm</a>.<br>根据CC BY-NC-SA 4.0,Alex Chi Z的2025号小手册获得许可。</small></p>

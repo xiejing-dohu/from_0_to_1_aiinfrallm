@@ -1,0 +1,46 @@
+# Tiny-LLM
+
+[学习 LLM 推理服务](./preface.md)
+[配置开发环境](./setup.md)
+
+---
+
+- [第 1 周：从矩阵乘法到文本](./week1-overview.md)
+    - [注意力与多头注意力](./week1-01-attention.md)
+    - [位置编码与 RoPE](./week1-02-positional-encodings.md)
+    - [分组查询注意力与多查询注意力](./week1-03-gqa.md)
+    - [RMSNorm 与 MLP](./week1-04-rmsnorm-and-mlp.md)
+    - [Qwen3 模型](./week1-05-qwen3-model.md)
+    - [生成响应](./week1-06-generate-response.md)
+    - [采样与第 2 周准备](./week1-07-sampling-prepare.md)
+- [🚧 第 2 周：向 vLLM 更进一步](./week2-overview.md)
+    - [🚧 KV Cache](./week2-01-kv-cache.md)
+    - [🚧 基准测试与性能分析](./week2-02-benchmark-profile.md)
+        - [🚧 可选：Metal 性能分析](./week2-advanced-profiling.md)
+    - [🚧 模型量化](./week2-03-quantize-model.md)
+    - [🚧 融合模型内核](./week2-04-fused-model-kernels.md)
+    - [🚧 融合 Decode Attention](./week2-05-decode-attention.md)
+    - [🚧 SIMD-Matrix Prefill](./week2-06-simd-matrix-prefill.md)
+    - [🚧 Split-K Prefill](./week2-07-split-k-prefill.md)
+- [🚧 第 3 周：构建 Mini vLLM](./week3-overview.md)
+    - [🚧 连续批处理](./week3-01-continuous-batching.md)
+    - [🚧 分块预填充](./week3-02-chunked-prefill.md)
+    - [🚧 分页 KV Cache](./week3-03-paged-attention-part1.md)
+    - [🚧 直接分页注意力](./week3-04-paged-attention-part2.md)
+    - [🚧 分页 FlashAttention](./week3-05-flash-attention.md)
+    - [🚧 可选：推测解码](./week3-optional-speculative-decoding.md)
+    - [🚧 可选：混合专家模型](./week3-optional-moe.md)
+- [🚧 第 4 周：构建编码智能体](./week4-overview.md)
+    - [🚧 智能体循环](./week4-01-agent-loop.md)
+    - [🚧 工具](./week4-02-tools.md)
+    - [🚧 安全与验证](./week4-03-safe-editing.md)
+    - [🚧 交互式会话](./week4-04-sessions.md)
+    - [🚧 上下文压缩](./week4-05-compaction.md)
+    - [🚧 控制与恢复](./week4-06-control-recovery.md)
+    - [🚧 评估](./week4-07-evaluation.md)
+- [🚧 附录：性能证据账本](./appendix-performance.md)
+- [由 Raft.build 赞助](./sponsor.md)
+
+---
+
+[术语索引](./glossary.md)
